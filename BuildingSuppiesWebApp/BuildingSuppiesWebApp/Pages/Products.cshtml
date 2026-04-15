@@ -1,0 +1,40 @@
+﻿@page
+@model ProductModel
+@{
+    ViewData["Title"] = "Products";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to view Products</p>
+
+<form method="post">
+    <input name="Search" />
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.Results != null && Model.Results.Any())
+{
+    <h2>Results</h2>
+    <ul>
+        @foreach (var product in Model.Results)
+        {
+            <li>
+                <strong>@product.Name</strong><br />
+                @product.Description<br />
+                SKU: @product.Sku<br />
+                Category: @product.Category
+            </li>
+        }
+    </ul>
+}
+
+<h2>Product Details</h2>
+<ul>
+    <li>Name: Sample name</li>
+    <li>Description: Sample description</li>
+    <li>Sku: Sample Sku</li>
+    <li>Category: Sample Category</li>
+    <li>Price: Sample Current price</li>
+</ul>
+
+<!--A chart with price history by month goes below. Or a graph. Codex.-->
