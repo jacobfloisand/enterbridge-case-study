@@ -1,3 +1,9 @@
+Loom Recording:
+
+https://www.loom.com/share/c8ff9197f81b4adeaa268e08469d2b67
+
+
+
 Contains a repository for a case study warehouse data/orders web UI
 
 AI Tools:
@@ -23,13 +29,15 @@ Design choices:
 
 Architecture:
 
-A page for product catalog with prices 
+A page for product catalog with prices
 
 A page to view the price history for a product
 
 A page to create an order (Should include templates)
 
 A page to view/edit/delete orders (Communicate edits to the buyer - auto email from business domain?)
+
+
 
 
 
